@@ -74,7 +74,6 @@ const propiedades_venta = [
 
 let tipoClase = document.querySelector('.row-1')
 let categClase = tipoClase.id
-console.log(categClase)
 let html =""
 let i = 1
 
@@ -83,7 +82,6 @@ printPropiedades(tipoClase,categClase)
 function printPropiedades(clase,chequeoClase){
     for (let propiedad of propiedades_venta){
         if(chequeoClase == 'row-ventas' && i<4){
-            console.log("paso1")
             let smoke = ""
             let pets = ""
             if(propiedad.smoke == true){
@@ -118,7 +116,6 @@ function printPropiedades(clase,chequeoClase){
             clase.innerHTML = html
             i+=1
         } else if(chequeoClase != 'row-ventas'){
-            console.log("paso1")
             let smoke = ""
             let pets = ""
             if(propiedad.smoke == true){

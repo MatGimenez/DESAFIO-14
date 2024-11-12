@@ -62,7 +62,6 @@ const propiedades_alquiler = [
 
 let tipoClase_2 = document.querySelector('.row-2')
 let categClase_2 = tipoClase_2.id
-console.log(categClase_2)
 let html_2=""
 let j = 1
 
@@ -71,7 +70,6 @@ printPropiedades2(tipoClase_2,categClase_2)
 function printPropiedades2(clase_2,chequeoClase_2){
     for (let propiedad of propiedades_alquiler){
         if(chequeoClase_2 == 'row-alquiler' && j<4){
-            console.log("paso1_alquiler")
             let smoke = ""
             let pets = ""
             if(propiedad.smoke == true){
@@ -106,7 +104,6 @@ function printPropiedades2(clase_2,chequeoClase_2){
             clase_2.innerHTML = html_2
             j+=1
         } else if(chequeoClase_2 != 'row-alquiler'){
-            console.log("else if alquiler")
             let smoke = ""
             let pets = ""
             if(propiedad.smoke == true){
